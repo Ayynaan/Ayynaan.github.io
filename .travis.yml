@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - "10"
+sudo: true
+dist: trusty
+
+branches:
+  only:
+  - master
+
+before_script:
+ - npm install -g @angular/cli@latest
+ - npm install
+
+script: 
+- ng build --prod
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
