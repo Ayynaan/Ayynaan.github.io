@@ -1,0 +1,27 @@
+<div class="card text-white bg-dark mb-3" style="max-width: 40rem; float: right; max-height: 45rem;">
+    <div class="card-header">Education:</div>
+    <div class="card-body">
+      <h3 class="card-text">{{school.school}}: {{school.degree}}</h3>
+      <i>{{school.date}}</i>
+    </div>
+  </div>
+<div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+<h3>Objective:</h3>
+<br>
+<p class="lead" class="text-muted">To obtain a respectable position inside an IT position, front-end, back-end, or otherwise, which enables me to have a work-life balance, and moderately engaging workload which coincides with the ability to utilize troubleshooting expertise to guarantee the smooth flow of IT operations.</p>
+</div>
+<div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+<h3><b>Basic Computer Skills:</b></h3>
+<li class="list-group" *ngFor="let skill of computer">
+    <ul>{{skill}}</ul>
+</li>
+<br>
+</div>
+<div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+<h3><b>Specifications:</b></h3>
+<li class="list-group" *ngFor="let specs of skills">
+    <ul id="mini">{{specs.name}}:</ul>
+    <ul id="mini">{{specs.types}}</ul>
+    <br>
+</li>
+</div>

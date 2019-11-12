@@ -1,0 +1,10 @@
+ul{
+    font-weight: bold;
+    list-style-type: square;
+    margin-bottom: -5px;
+}
+#mini{
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-spacing: -5px;
+}
